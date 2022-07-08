@@ -1,0 +1,93 @@
+{
+	"app":{
+		"bundleName":"com.zzt.ai_versification",
+		"vendor":"zzt",
+		"version":{
+			"code":1000000,
+			"name":"1.0.0"
+		}
+	},
+	"deviceConfig":{},
+	"module":{
+		"package":"com.zzt.ai_versification",
+		"name":".MyApplication",
+		"mainAbility":"com.zzt.ai_versification.MainAbility",
+		"deviceType":[
+			"phone",
+			"tablet",
+			"tv",
+			"wearable"
+		],
+		"distro":{
+			"deliveryWithInstall":true,
+			"moduleName":"entry",
+			"moduleType":"entry",
+			"installationFree":false
+		},
+		"abilities":[
+			{
+				"skills":[
+					{
+						"entities":[
+							"entity.system.home"
+						],
+						"actions":[
+							"action.system.home"
+						]
+					}
+				],
+				"visible":true,
+				"name":"com.zzt.ai_versification.MainAbility",
+				"icon":"$media:icon",
+				"description":"$string:mainability_description",
+				"label":"$string:entry_MainAbility",
+				"type":"page",
+				"launchType":"standard",
+				"metaData": {
+					"customizeData": [
+						{
+							"name": "hwc-theme",
+							"value": "androidhwext:style/Theme.Emui.Light.NoTitleBar",
+							"extra": ""
+						}
+					]
+				}
+			}
+		],
+		"reqPermissions": [
+			{
+				"name": "ohos.permission.INTERNET"
+			},
+			{
+				"name": "ohos.permission.CAMERA"
+			},
+			{
+				"name": "ohos.permission.WRITE_MEDIA"
+			},
+			{
+				"name": "ohos.permission.WRITE_USER_STORAGE"
+			},
+			{
+				"name": "ohos.permission.READ_MEDIA"
+			},
+			{
+				"name": "ohos.permission.READ_USER_STORAGE"
+			},
+			{
+				"name": "ohos.permission.GET_BUNDLE_INFO"
+			}
+		],
+		"js":[
+			{
+				"pages":[
+					"pages/index/index"
+				],
+				"name":"default",
+				"window":{
+					"designWidth":720,
+					"autoDesignWidth":true
+				}
+			}
+		]
+	}
+}
