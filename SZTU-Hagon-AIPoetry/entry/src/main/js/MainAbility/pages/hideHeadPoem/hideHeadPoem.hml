@@ -1,0 +1,17 @@
+<div class="container">
+    <form class="container" onsubmit='check1'>
+        <input style="width:80%;height:10%;margin-top: 15%;" type="text" placeholder="请输入要生成藏头诗的句子" name='poemHead'>    </input>
+        <div class="display" style="margin-top: 15%;">
+            <text style="margin: 40px;font-size: 38px;">
+                {{aiResult}}
+            </text>
+
+        </div>
+        <input class="subButton" type='submit'>生成藏头诗</input>
+        <button class="subButton2" onclick="back">返回</button>
+    </form>
+
+
+    <image src="../../common/123.png" style="z-index: -1; position: fixed;width: 100%;height: 100%;">    </image>
+
+</div>
