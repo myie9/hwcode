@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    font-size: 60px;
+    text-align: center;
+    width: 100%;
+    height: 40%;
+    margin: 10px;
+}
+.display{
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 35%;
+    border-radius: 20px;
+    background-color: #fff5f1f1;
+    opacity: 0.8;
+    box-shadow: 10px 10px 5px #888888;
+}
+.subButton{
+    width: 250px;
+    margin-left: 25%;
+    margin-top: 5%;
+    background-color:  #ffa5552f;
+}
+.subButton2{
+    width: 250px;
+    height: 70px;
+    margin-left: 25%;
+    background-color:  #ffa5552f;
+    margin-top: 2%;
+}
+
+@media screen and (orientation: landscape) {
+    .title {
+        font-size: 60px;
+    }
+}
+
+@media screen and (device-type: tablet) and (orientation: landscape) {
+    .title {
+        font-size: 100px;
+    }
+}

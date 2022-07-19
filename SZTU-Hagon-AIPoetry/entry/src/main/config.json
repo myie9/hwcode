@@ -1,0 +1,78 @@
+{
+  "app": {
+    "vendor": "example",
+    "bundleName": "com.example.aipoetry",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "mainAbility": ".MainAbility",
+    "deviceType": [
+      "phone"
+    ],
+    "abilities": [
+      {
+        "orientation": "unspecified",
+        "visible": true,
+        "srcPath": "MainAbility",
+        "srcLanguage": "js",
+        "icon": "$media:icon",
+        "description": "$string:MainAbility_desc",
+        "formsEnabled": false,
+        "label": "$string:MainAbility_label",
+        "type": "page",
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "metaData": {
+          "customizeData": [
+            {
+              "extra": "",
+              "name": "hwc-theme",
+              "value": "androidhwext:style/Theme.Emui.NoTitleBar"
+            }
+          ]
+        },
+        "name": ".MainAbility",
+        "launchType": "standard"
+      }
+    ],
+    "distro": {
+      "moduleType": "entry",
+      "installationFree": false,
+      "deliveryWithInstall": true,
+      "moduleName": "entry"
+    },
+    "package": "com.example.entry",
+    "name": ".entry",
+    "js": [
+      {
+        "pages": [
+          "pages/index/index",
+          "pages/continuePoem/continuePoem",
+          "pages/hideHeadPoem/hideHeadPoem"
+        ],
+        "name": ".MainAbility",
+        "window": {
+          "designWidth": 720,
+          "autoDesignWidth": false
+        }
+      }
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.INTERNET"
+      }
+    ]
+  }
+}

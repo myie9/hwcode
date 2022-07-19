@@ -1,0 +1,11 @@
+<div class="container">
+    <text style="font-size: 128px;margin-bottom: 20%;color: #ffa5552f;">
+        AI作诗
+    </text>
+
+    <input class="subButton" type="submit" onclick="goHideHeadPoem">AI生成藏头诗</input>
+    <input class="subButton" type="submit" onclick="goContinuePoem">AI生成续写诗</input>
+    
+    <image src="../../common/345.jpg" style="z-index: -1; position: fixed;width: 100%;height: 100%;">    </image>
+
+</div>
