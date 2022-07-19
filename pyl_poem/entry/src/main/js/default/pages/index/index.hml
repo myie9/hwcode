@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="container1">
+        <text class="title">藏头诗</text>
+        <input class="input" type="text" onchange="get_cangtou" placeholder="例：我爱祖国"></input>
+        <button class="create" onclick="create_cangtou" value="生成藏头诗"></button>
+        <divider class="divide"></divider>
+        <text class="title">输入第一句诗</text>
+        <div class="container2">
+            <input class="input" type="text" onchange="get_xuxie" placeholder="例：本来无一物"></input>
+        </div>
+
+        <button class="create" onclick="create_xuxie" value="AI生成整首诗"></button>
+        <dialog id="cangtouDialog">
+            <div class="dialog-div1">
+                <text class="txt">藏头诗生成成功</text>
+                <text style="width : 100%; height : 180px; font-size : 16px; text-align : start; margin : 10px;">
+                    {{ result_tou }}
+                </text>
+                <button class="close" onclick="close_tou" value="关闭"></button>
+            </div>
+
+        </dialog>
+        <dialog id="xuxieDialog">
+            <div class="dialog-div2">
+                <text class="txt">整首诗生成成功</text>
+                <text class="text">{{ result_xu }}</text>
+                <button class="close" onclick="close_xu" value="关闭"></button>
+            </div>
+
+        </dialog>
+    </div>
+
+</div>
