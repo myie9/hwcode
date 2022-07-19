@@ -1,0 +1,74 @@
+{
+  "app": {
+    "bundleName": "com.example.aiwrite_js",
+    "vendor": "example",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {
+  },
+  "module": {
+    "package": "com.example.aiwrite_js",
+    "name": ".MyApplication",
+    "mainAbility": "com.example.aiwrite_js.MainAbility",
+    "deviceType": [
+      "phone",
+      "tablet",
+      "tv",
+      "wearable"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "name": "com.example.aiwrite_js.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "visible": true,
+        "launchType": "standard",
+        "metaData": {
+          "customizeData": [{
+            "name": "hwc-theme",
+            "value": "androidhwext:style/Theme.Emui.Light.NoTitleBar",
+            "extra": ""
+          }]
+        }
+      }
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.INTERNET"
+      }
+    ],
+    "js": [
+      {
+        "pages": [
+          "pages/index/index"
+        ],
+        "name": "default",
+        "window": {
+          "designWidth": 720,
+          "autoDesignWidth": true
+        }
+      }
+    ]
+  }
+}
