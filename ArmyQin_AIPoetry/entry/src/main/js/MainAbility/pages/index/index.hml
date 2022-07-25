@@ -1,0 +1,35 @@
+<div class="container">
+    <!-- 藏头诗 -->
+    <div class="column" style="height: 30%; border-bottom: 2px solid #ccc;">
+        <!-- 标题一 -->
+        <text class="title">
+            {{ $t('strings.titleOne') }}
+        </text>
+        <!-- 操作区域 -->
+        <div class="input-item">
+            <input type="text" value="{{inputOne}}" onchange="textChangeOne"></input>
+            <input type="button" value="AI生成藏头诗" onclick="onClickOne"></input>
+        </div>
+        <!-- 藏头诗滚动区域 -->
+        <div class="desc" onclick="onMarqueeOne">
+            <marquee id="oneMarquee{{$idx}}" for="{{poetryOne}}">{{$item}}</marquee>
+        </div>
+    </div>
+    <!-- 输入第一句诗 -->
+    <div class="column" style="height: 70%;">
+        <!-- 标题二 -->
+        <text class="title">
+            {{ $t('strings.titleTwo') }}
+        </text>
+        <!-- 操作区域 -->
+        <div class="input-item">
+            <input type="text" value="{{inputTwo}}" onchange="textChangeTwo"></input>
+            <input type="button" value="AI生成整首诗" onclick="onClickTwo"></input>
+        </div>
+        <!-- 整首诗滚动区域 -->
+        <div class="desc" onclick="onMarqueeTwo">
+            <marquee id="twoMarquee{{$idx}}" for="{{poetryTwo}}">{{$item}}</marquee>
+        </div>
+    </div>
+
+</div>
