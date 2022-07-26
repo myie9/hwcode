@@ -1,0 +1,94 @@
+.container {
+    flex-direction: column;
+    width: 100%;
+}
+
+.banner{
+    width: 100%;
+    height: 160px;
+    background-image: url(/common/images/banner.jpg);
+    background-size: 100% 100%;
+    align-items: center;
+    justify-content: center;
+}
+.banner-bg{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+.banner-text{
+    color: #fff;
+    font-size: 24px;
+    padding: 0 20px;
+}
+.main{
+    padding: 20px;
+    flex-direction: column;
+}
+.mgb20{
+    margin-bottom: 20px;
+}
+.title {
+    font-size: 30px;
+    color: #000000;
+}
+.input{
+    height: 50px;
+    font-size: 20px;
+}
+.btn{
+    height: 50px;
+    background-color: #ed5858;
+    font-size: 24px;
+}
+
+.divider{
+    margin: 20px 0;
+    color: #ddd;
+    stroke-width: 3px;
+    line-cap: round;
+}
+
+.sub-title{
+    font-size: 16px;
+    color: #666;
+}
+.dialog{
+    margin-bottom: 50%;
+}
+.dialog-div {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.dialog-title{
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.dialog-title-txt{
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+}
+.dialog-content{
+    width: 100%;
+    min-height: 80px;
+}
+.dialog-text {
+    font-size: 18px;
+    color: #000000;
+}
+.dialog-btn{
+    width: 80%;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+}
+.dialog-btn-txt{
+    font-size: 22px;
+    background-color: #ed5858;
+    color: #fff;
+    width: 60%;
+}
