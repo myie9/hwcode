@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "entry_desc",
+      "value": "description"
+    },
+    {
+      "name": "MainAbility_desc",
+      "value": "这是一款智能AI作诗应用"
+    },
+    {
+      "name": "MainAbility_label",
+      "value": "AI作诗"
+    }
+  ]
+}
