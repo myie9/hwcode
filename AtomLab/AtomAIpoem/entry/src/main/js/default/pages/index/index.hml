@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="title-bar" >
+        <text class="title">{{ $t('strings.title') }}</text>
+    </div>
+    <div class="container-body">
+        <text class="tips">
+            {{ $t('strings.acrosticPoemKey') }}
+        </text>
+        <div class="item-textarea">
+            <textarea onchange="textChangeKey" extend="true" placeholder="每个字将变成诗中第一个字" id="keyPoem">{{
+                $t('strings.acrosticPoemKeyContent') }}</textarea>
+        </div>
+        <div>
+            <input type="button" class="btn" onclick="genHeadPoem" value="把话藏在诗中"/>
+        </div>
+
+        <divider class="divider" vertical="false"></divider>
+
+        <text class="tips"> {{ $t('strings.acrosticPoemHead') }}</text>
+        <div class="item-textarea">
+            <textarea onchange="textChangeHead" extend="true" placeholder="" id="headPoem">{{content}}</textarea>
+        </div>
+        <div>
+            <input type="button" class="btn" onclick="genPic" value="生成海报"/>
+        </div>
+    </div>
+</div>

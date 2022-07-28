@@ -1,0 +1,100 @@
+.container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.container-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    margin: 50px;
+    allow-scale: true;
+    extend: true;
+}
+.title-bar {
+    background-color: burlywood;
+}
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+    margin: 30px;
+}
+.tips {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: start;
+    width: 100%;
+    margin: 30px;
+    margin-top: 90px;
+}
+/* 输入框样式 */
+.item-textarea {
+    border-style: solid;
+    border-color: gray;
+    border-width: 3px;
+    border-radius: 15px;
+    margin: 10px;
+    allow-scale: true;
+    extend: true;
+}
+.item-text{
+    margin: 10px;
+    allow-scale: true;
+    extend: true;
+}
+.btn {
+    background-color: burlywood;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.divider {
+    margin: 10px;
+    margin-top: 100px;
+    color: gray;
+    stroke-width: 1px;
+    line-cap: round;
+}
+
+@media screen and (device-type: tablet) and (orientation: landscape) {
+    .title {
+        font-size: 100px;
+    }
+}
+@media screen and (device-type: wearable) {
+    .title {
+        font-size: 28px;
+        color: #FFFFFF;
+    }
+}
+@media screen and (device-type: tv) {
+    .container {
+        background-image: url("/common/images/Wallpaper.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .title {
+        font-size: 100px;
+        color: #FFFFFF;
+    }
+}
+@media screen and (device-type: phone) and (orientation: standard) {
+    .container {
+        background-image: url("/common/images/bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .title {
+        font-size: 60px;
+        font-style: normal;
+    }
+}
