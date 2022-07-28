@@ -1,0 +1,50 @@
+<div class="container">
+    <stack class="banner">
+        <div class="banner-bg"></div>
+        <text class="banner-text">
+            七夕节快乐，快来生成一首藏头诗送给你的对象吧
+        </text>
+    </stack>
+    <div class="main">
+        <text class="title mgb20">藏头诗</text>
+
+        <input 
+            class="input mgb20" 
+            type="text" maxlength="8" 
+            value="{{ keyword }}" 
+            placeholder="请输入关键词，如：七夕快乐"
+            onchange="changeKeyword"
+        ></input>
+
+        <button class="btn mgb20" type="capsule" value="生成藏头诗" onclick="createCangtou"></button>
+        
+        <divider class="divider"></divider>
+
+        <text class="title">续写诗</text>
+        <text class="sub-title mgb20">输入第一句诗，生成完成整诗</text>
+
+        <input
+            class="input mgb20"
+            type="text"
+            maxlength="8"
+            value="{{ first }}"
+            placeholder="请输入第一句"
+            onchange="changeFirst"
+        ></input>
+
+        <button class="btn mgb20" type="capsule" value="生成完整诗" onclick="createXuxie"></button>
+    </div>
+    <dialog id="dialog" class="dialog">
+        <div class="dialog-div">
+            <div class="dialog-title">
+                <text class="dialog-title-txt">{{title}}</text>
+            </div>
+            <div class="dialog-content">
+                <text class="dialog-text">{{content}}</text>
+            </div>
+            <div class="dialog-btn">
+                <button type="capsule" value="确定" onclick="hideDialog" class="dialog-btn-txt"></button>
+            </div>
+        </div>
+    </dialog>
+</div>
