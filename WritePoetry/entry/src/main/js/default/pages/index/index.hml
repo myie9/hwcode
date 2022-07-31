@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="set_line">
+        <text class="title">{{ aiMode }}</text>
+        <button class="btn" type="capsule" onclick="modeChange">切换模式</button>
+    </div>
+    <div class="set_line">
+        <input class="argot_input" type="text" value="{{ argot }}" onchange="argotChange"></input>
+        <button class="btn" type="capsule" onclick="writeStart">生成</button>
+    </div>
+    <div class="paper">
+        <text class="each_line" for="{{ rawPoetry }}">{{ $item }}</text>
+    </div>
+</div>
