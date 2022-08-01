@@ -1,0 +1,41 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "D:\\backup\\n018511\\.ohos\\config\\openharmony\\auto_ohos_default.cer",
+          "storePassword": "0000001B8689A3B7CF62C74539A53BD90AA9E8CC67F3A2648DE73486EE6908C32544CF7B92F595938DA70F",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B6CF17D091528F02362C80DB98D1651FE9AB67033F717D172F95034E30329521A9ADC1A908E7E97",
+          "profile": "D:\\backup\\n018511\\.ohos\\config\\openharmony\\auto_ohos_default_com.example.aiwritingpoetry.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "D:\\backup\\n018511\\.ohos\\config\\openharmony\\auto_ohos_default.p12"
+        }
+      }
+    ],
+    "compileSdkVersion": 8,
+    "compatibleSdkVersion": 8,
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
