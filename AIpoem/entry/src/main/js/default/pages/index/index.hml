@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="item-container">
+        <text class="txt belowMargin">藏头诗</text>
+        <div class="item-9png" style="width : 80%; border-width : 1px;">
+            <textarea onchange="textChangeKey" placeholder="点此输入4个不重复的汉字" id="keyPoem">鸿蒙牛逼</textarea>
+        </div>
+        <div style="margin-top : 20px; align-self : center;">
+            <input type="button" class="btn" onclick="genHeadPoem" value="AI生成藏头诗"/>
+        </div>
+        <div class="hr"></div>
+        <text class="txt belowMargin">输入第一句诗</text>
+        <div class="item-9png" style="width : 80%; border-width : 1px;">
+            <textarea onchange="textChangeHead" placeholder="点此输入一两句诗，逗号分隔" id="headPoem" extend="true">星星之火可燎原
+            </textarea>
+        </div>
+        <div style="margin-top : 20px; align-self : center;">
+            <input type="button" class="btn" onclick="genPoem" value="AI生成整首诗"/>
+        </div>
+    </div>
+</div>
