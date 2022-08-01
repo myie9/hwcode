@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url("common/images/paper.png");
+}
+
+.set_line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 18%;
+}
+
+.title {
+    margin: 5px;
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 5px;
+}
+
+.btn {
+    margin-left: 40px;
+    font-size: 22px;
+}
+
+.argot_input {
+    width: 200px;
+    height: 60px;
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+.paper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 64%;
+    padding: 20px;
+    text-align: center;
+}
+
+.each_line {
+    margin: 5px;
+    font-size: 32px;
+    letter-spacing: 5px;
+}
